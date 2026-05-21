@@ -213,7 +213,7 @@ Cada arista se representa mediante:
 | ID | Lugar |
 |---|---|
 | A | Parque Principal |
-| B | Estación de Policía |
+| B | Paradero |
 | C | Universidad de Cundinamarca |
 | D | Hospital San Rafael |
 | E | Alcaldía Municipal |
