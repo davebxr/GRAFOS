@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad de grafos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="grafo.js" defer></script> <!-- Primero se deja este debido a que control.js necesita de grafo.js -->
+    <script src="control.js" defer></script>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <div class="encabezado">
+        <h1>Mapa sobre rutas de Facatativá</h1>
+        <p>Edgar David Acosta Bernal y Cristian Felipe Ortiz Cucunuba</p>
+    </div>
+
+    <!-- Contenido -->
+    <div class="contenedor-principal">
+
+        <!-- Formularios para agregar nodos y arcos -->
+        <div class="columna-controles">
+
+            <h2>Agregar Lugar</h2>
+
+            <label>ID:</label>
+            <input type="text" id="campoIdNodo">
+
+            <label>Nombre del lugar:</label>
+            <input type="text" id="campoNombreNodo">
+
+            <button onclick="agregarNodoUI()">Agregar Lugar</button>
+
+            <hr style="border:none; border-top:1px solid #ede9fe; margin:12px 0;">
+
+            <h2>Agregar Ruta</h2>
+
+            <label>Desde:</label>
+            <input type="text" id="campoIdOrigen">
+
+            <label>Hasta:</label>
+            <input type="text" id="campoIdDestino">
+
+            <label>Distancia (m):</label>
+            <input type="number" id="campoDistancia">
+
+            <button onclick="agregarArcoUI()">Agregar Ruta</button>
+
+            <hr style="border:none; border-top:1px solid #ede9fe; margin:12px 0;">
+            
+            <button onclick="mostrarGrafoUI()">Ver Lista de Adyacencia</button>
+            <pre id="zonaListaAdyacencia"></pre>
+
+        </div>
+
+        <!-- SVG -->
+        <div class="columna-grafo">
+            <h2>Visualización del Grafo</h2>
+            <p class="texto-ayuda">Cada círculo es un lugar, las flechas son rutas con su distancia en metros.</p>
+            <div id="contenedorGrafo"></div>
+        </div>
+
+    </div>
+
+    <!-- Mensajes -->
+    <div id="zonaMensajes"></div>
+
+</body>
+</html>

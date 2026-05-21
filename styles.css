@@ -1,0 +1,165 @@
+/* Estilo de la página */
+/* Edgar David Acosta Bernal y Cristian Felipe Ortiz Cucunuba */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #1e1e2e;
+    margin: 0;
+    padding: 16px;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #ffffff;
+    color: #4c1d95;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 1.5px solid #7c3aed;
+    margin-bottom: 16px;
+}
+
+.encabezado h1 {
+    font-size: 18px;
+    margin: 0 0 4px 0;
+    color: #4c1d95;
+}
+
+.encabezado p {
+    font-size: 12px;
+    margin: 1px 0;
+    color: #7c3aed;
+}
+
+/* layout de dos columnas */
+.contenedor-principal {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+/* Columna izquierda */
+.columna-controles {
+    width: 220px;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    border: 1.5px solid #7c3aed;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.columna-controles h2 {
+    color: #7c3aed;
+    font-size: 13px;
+    margin: 8px 0 5px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #7c3aed;
+}
+
+.columna-controles h2:first-child {
+    margin-top: 0;
+}
+
+.columna-controles label {
+    display: block;
+    font-size: 11px;
+    color: #4c1d95;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.columna-controles input {
+    width: 100%;
+    padding: 5px 7px;
+    border: 1.5px solid #7c3aed;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #1e1e2e;
+    box-sizing: border-box;
+    margin-top: 2px;
+}
+
+.columna-controles input:focus {
+    outline: none;
+    border-color: #4c1d95;
+}
+
+.columna-controles button {
+    width: 100%;
+    padding: 7px;
+    background-color: #7c3aed;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.columna-controles button:hover {
+    background-color: #5b21b6;
+}
+
+/* Columna derecha (SVG) */
+.columna-grafo {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1.5px solid #7c3aed;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.columna-grafo h2 {
+    color: #4c1d95;
+    font-size: 15px;
+    margin: 0 0 4px 0;
+}
+
+.texto-ayuda {
+    font-size: 11px;
+    color: #7c3aed;
+    margin-bottom: 10px;
+}
+
+/* SVG ocupa todo el ancho que este disponible */
+#contenedorGrafo svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #7c3aed;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.sin-nodos {
+    font-size: 12px;
+    color: #7c3aed;
+    font-style: italic;
+}
+
+/* Estado */
+#zonaMensajes {
+    margin-top: 12px;
+    text-align: center;
+    color: #7c3aed;
+    font-weight: bold;
+    font-size: 12px;
+    min-height: 18px;
+}
+
+/* Lista de adyacencia */
+#zonaListaAdyacencia {
+    margin-top: 8px;
+    background-color: #f5f3ff;
+    border: 1px solid #7c3aed;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 10px;
+    color: #4c1d95;
+    font-family: 'Segoe UI', sans-serif;
+    white-space: pre-wrap;
+    word-break: break-word;
+    min-height: 20px;
+    line-height: 1.6;
+}
