@@ -49,12 +49,6 @@ GRAFOS
 | grafo.js | Estructura del grafo y clases |
 | control.js | Visualización SVG y conexión con la interfaz |
 
-# Tecnologías utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-- SVG
 
 # Estructura de datos utilizada
 
@@ -88,7 +82,6 @@ class Arista {
 | distanciaEnMetros | Peso de la arista |
 | siguienteArco | Referencia al siguiente arco |
 
----
 
 # Clase Nodo
 
@@ -112,7 +105,6 @@ class Nodo {
 | `nombre` | Nombre del lugar |
 | `primerArco` | Primer arco enlazado |
 
----
 
 # Clase Grafo
 
@@ -138,8 +130,6 @@ Agrega un nuevo lugar al mapa.
 mapaUrbano.agregarNodo("A", "Parque Principal");
 ```
 
----
-
 ## agregarArco(idOrigen, idDestino, distancia)
 
 Crea una conexión dirigida entre dos nodos.
@@ -155,7 +145,6 @@ mapaUrbano.agregarArco("A", "B", 450);
 - La distancia debe ser mayor a cero.
 - No permite rutas duplicadas.
 
----
 
 ## mostrarGrafo()
 
@@ -167,8 +156,6 @@ Ejemplo:
 A → B [450m] → C [1200m]
 B → D [600m]
 ```
-
----
 
 # Visualización del grafo
 
@@ -192,21 +179,13 @@ Cada arista se representa mediante:
 
 <img width="1098" height="741" alt="image" src="https://github.com/user-attachments/assets/71176f60-5095-46ba-a732-dba33aefa542" />
 
-> Visualización principal del sistema de rutas urbanas de Facatativá. En la imagen se observan los nodos, aristas dirigidas y pesos correspondientes a las distancias entre lugares.
-
-
 ## Formulario para agregar nodos y rutas
 
 <img width="246" height="490" alt="image" src="https://github.com/user-attachments/assets/0f08c07c-0cb5-4810-bfc4-0f06ff0066c7" />
 
-> Interfaz utilizada para agregar nuevos lugares y rutas dinámicamente dentro del grafo.
-
 ## Lista de adyacencia
 
 <img width="213" height="165" alt="image" src="https://github.com/user-attachments/assets/50065f71-a4a5-4ffb-b3e7-1ea07558b290" />
-
-> Representación textual de la estructura del grafo mediante listas enlazadas de adyacencia.
-
 
 # Lugares iniciales del proyecto
 
@@ -243,31 +222,21 @@ Cada arista se representa mediante:
 
 #  Cómo ejecutar el proyecto
 
-1. Descargar o clonar el repositorio
-2. Abrir el archivo index.html
-3. El grafo aparecerá automáticamente
-4. Usar el panel lateral para agregar nodos y rutas
-5. Probar la visualización y la lista de adyacencia
+1. Ingresar al enlace que se encuentra en el apartado de About
 
 # Referencias
 
-- Cormen, T. et al. *Introduction to Algorithms*, MIT Press.
-- MDN Web Docs – SVG y JavaScript.
-- Documentación oficial de JavaScript:
-  https://developer.mozilla.org/es/docs/Web/JavaScript
-- SVG en HTML:
-  https://developer.mozilla.org/es/docs/Web/SVG
+- viewBox y sistema de coordenadas: https://www.freecodecamp.org/news/svg-viewbox-attribute-explained/
+- createElementNS() — crear SVG desde JavaScript: https://www.w3resource.com/javascript-exercises/javascript-dom-exercise-5.php
+- <circle> círculos de los nodos: https://www.cometocoding.com/svg-circle-element/
+- <rect> fondo de las etiquetas de peso: https://www.december.com/html/svg/element/rect.html
+- <line> líneas/flechas entre nodos: https://www.htmldog.com/references/svg/elements/line/
+- <marker> y punta de flecha: https://www.svgbackgrounds.com/how-to-use-svg-markers/
+- <text> etiquetas de ID y nombres: https://www.accessibility-developer-guide.com/examples/sensory-characteristics/svg-text/
+- Coordenadas polares a cartesianas: https://www.superprof.es/apuntes/escolar/matematicas/geometria/analitica/coordenadas-polares.html
+
+
 
 # Conclusiones
 
 Durante el desarrollo del proyecto se logró comprender cómo funcionan internamente los grafos usando listas enlazadas y referencias entre objetos.
-
-También se fortalecieron conceptos relacionados con:
-
-- Estructuras de datos dinámicas.
-- Manipulación del DOM.
-- Renderizado SVG.
-- Organización del código en módulos.
-- Validación de datos y manejo de errores.
-
-El proyecto cumple con los requerimientos solicitados en la actividad, incluyendo la representación dinámica del grafo, la visualización web y el uso correcto de listas de adyacencia enlazadas.
