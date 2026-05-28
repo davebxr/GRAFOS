@@ -226,14 +226,13 @@ Cada arista se representa mediante:
 
 # Referencias
 
-- viewBox y sistema de coordenadas: https://www.freecodecamp.org/news/svg-viewbox-attribute-explained/
-- createElementNS() — crear SVG desde JavaScript: https://www.w3resource.com/javascript-exercises/javascript-dom-exercise-5.php
-- <circle> círculos de los nodos: https://www.cometocoding.com/svg-circle-element/
-- <rect> fondo de las etiquetas de peso: https://www.december.com/html/svg/element/rect.html
-- <line> líneas/flechas entre nodos: https://www.htmldog.com/references/svg/elements/line/
-- <marker> y punta de flecha: https://www.svgbackgrounds.com/how-to-use-svg-markers/
-- <text> etiquetas de ID y nombres: https://www.accessibility-developer-guide.com/examples/sensory-characteristics/svg-text/
-- Coordenadas polares a cartesianas: https://www.superprof.es/apuntes/escolar/matematicas/geometria/analitica/coordenadas-polares.html
+- viewBox y sistema de coordenadas: https://developer.mozilla.org/es/docs/Web/SVG/Attribute/viewBox
+- createElementNS() — crear SVG desde JavaScript: https://developer.mozilla.org/es/docs/Web/API/Document/createElementNS
+- <circle> círculos de los nodos: https://developer.mozilla.org/es/docs/Web/SVG/Element/circle
+- <rect> fondo de las etiquetas de peso: https://developer.mozilla.org/es/docs/Web/SVG/Element/rect
+- <line> líneas/flechas entre nodos: https://developer.mozilla.org/es/docs/Web/SVG/Element/line
+- <marker> y punta de flecha: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/marker
+- <text> etiquetas de ID y nombres: https://developer.mozilla.org/es/docs/Web/SVG/Element/text
 
 
 
