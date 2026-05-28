@@ -164,7 +164,7 @@ function renderizarGrafo() {
 //Muestra la lista de adyacencia en el área de texto #zonaListaAdyacencia
 function mostrarGrafoUI() {
     document.getElementById("zonaListaAdyacencia").textContent = mapaUrbano.mostrarGrafo();
-    mostrarMensaje("Lista de adyacencia actualizada.", "info");
+    mostrarMensaje("Lista de adyacencia.", "info");
 }
 
 
@@ -176,6 +176,11 @@ function agregarNodoUI() {
     mapaUrbano.agregarNodo(id, nombre);
     mostrarMensaje("Lugar agregado: " + nombre, "exito");
     renderizarGrafo();
+
+    //Actualiza la lista en consola cada vez que se agrega un lugar
+    console.log("Lista de adyacencia:");
+    console.log(mapaUrbano.mostrarGrafo());
+
     document.getElementById("campoIdNodo").value = "";
     document.getElementById("campoNombreNodo").value = "";
 }
@@ -194,14 +199,17 @@ function agregarArcoUI() {
     mapaUrbano.agregarArco(idOrigen, idDestino, distancia);
     const arcoDespues = mapaUrbano.obtenerTodosLosArcos(idOrigen).length;
     if (arcoDespues > arcoAntes) {
-        mostrarMensaje("Ruta agregada: " + idOrigen + " → " + idDestino + " (" + distancia + " m)", "exito");
+        mostrarMensaje("Ruta agregada: " + idOrigen + " -> " + idDestino + " (" + distancia + " m)", "exito");
         renderizarGrafo();
+
+        //Actualiza la lista en consola cada vez que se agrega un lugar
+        console.log("Lista de adyacencia:");
+        console.log(mapaUrbano.mostrarGrafo());
         document.getElementById("campoIdOrigen").value = "";
         document.getElementById("campoIdDestino").value = "";
         document.getElementById("campoDistancia").value = "";
     }
 }
-
 
 //Muestra un mensaje de estado que desaparece en 3 segundos
 function mostrarMensaje(texto, tipo) {
