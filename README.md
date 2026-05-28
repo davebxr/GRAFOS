@@ -101,8 +101,7 @@ Administra todos los nodos y conexiones del sistema.
 
 ```js
 listaDeVertices = {
-  "A": Nodo → Arista("B", 450) → Arista("C", 1200),
-  "B": Nodo → Arista("D", 600)
+  "A": Nodo -> Arista("B", 450) -> Arista("C", 1200), "B": Nodo -> Arista("D", 600)
 }
 ```
 
@@ -134,8 +133,7 @@ Muestra la lista de adyacencia completa.
 Ejemplo:
 
 ```txt
-A → B [450m] → C [1200m]
-B → D [600m]
+A -> B [450m] -> C [1200m] B -> D [600m]
 ```
 
 # Visualización del grafo
