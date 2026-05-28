@@ -45,7 +45,7 @@ class Grafo {
         let actual = nodoOrigen.primerArco;
         while (actual !== null) {
             if (actual.idDestino === idDestino) {
-                mostrarMensaje("Ruta duplicada: " + idOrigen + " → " + idDestino, "error");
+                mostrarMensaje("Ruta duplicada: " + idOrigen + " -> " + idDestino, "error");
                 return;
             }
             actual = actual.siguienteArco;
@@ -81,7 +81,7 @@ class Grafo {
                 texto += "(sin rutas)\n";
             } else {
                 for (let arco of arcos) {
-                    texto += "→ " + arco.idDestino + " [" + arco.distanciaEnMetros + "m] ";
+                    texto += "-> " + arco.idDestino + " [" + arco.distanciaEnMetros + "m] ";
                 }
                 texto += "\n";
             }
@@ -106,7 +106,3 @@ mapaUrbano.agregarArco("B", "D", 600);
 mapaUrbano.agregarArco("C", "E", 300);
 mapaUrbano.agregarArco("D", "E", 500);
 mapaUrbano.agregarArco("E", "A", 950); //E regresa al origen A
-
-//consola
-console.log("Lista de adyacencia:");
-console.log(mapaUrbano.mostrarGrafo());
