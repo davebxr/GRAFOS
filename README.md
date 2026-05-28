@@ -127,14 +127,6 @@ Crea una conexión dirigida entre dos nodos.
 mapaUrbano.agregarArco("A", "B", 450);
 ```
 
-### Validaciones realizadas
-
-- Verifica que el nodo origen exista.
-- Verifica que el nodo destino exista.
-- La distancia debe ser mayor a cero.
-- No permite rutas duplicadas.
-
-
 ## mostrarGrafo()
 
 Muestra la lista de adyacencia completa.
@@ -148,19 +140,7 @@ B → D [600m]
 
 # Visualización del grafo
 
-La visualización fue desarrollada usando SVG y JavaScript puro.
-
-Cada nodo se dibuja como:
-
-- Un círculo.
-- Una etiqueta de texto.
-- Un identificador.
-
-Cada arista se representa mediante:
-
-- Líneas dirigidas.
-- Flechas.
-- Etiquetas con el peso.
+La visualización fue desarrollada usando SVG y JavaScript.
 
 # Capturas del proyecto
 
@@ -222,7 +202,6 @@ Cada arista se representa mediante:
 - <line> líneas/flechas entre nodos: https://developer.mozilla.org/es/docs/Web/SVG/Element/line
 - <marker> y punta de flecha: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/marker
 - <text> etiquetas de ID y nombres: https://developer.mozilla.org/es/docs/Web/SVG/Element/text
-
 
 
 # Conclusiones
