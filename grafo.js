@@ -106,3 +106,7 @@ mapaUrbano.agregarArco("B", "D", 600);
 mapaUrbano.agregarArco("C", "E", 300);
 mapaUrbano.agregarArco("D", "E", 500);
 mapaUrbano.agregarArco("E", "A", 950); //E regresa al origen A
+
+//consola
+console.log("Lista de adyacencia:");
+console.log(mapaUrbano.mostrarGrafo());
