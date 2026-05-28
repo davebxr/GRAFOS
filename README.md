@@ -49,17 +49,6 @@ GRAFOS
 | grafo.js | Estructura del grafo y clases |
 | control.js | Visualización SVG y conexión con la interfaz |
 
-
-# Estructura de datos utilizada
-
-El proyecto utiliza una lista de adyacencia enlazada, donde:
-
-- Cada vértice es un objeto Nodo
-- Cada conexión es un objeto Arista
-- Las aristas se enlazan mediante referencias
-
-Esta estructura permite agregar nodos y rutas dinámicamente sin depender de tamaños fijos
-
 # Clase Arista
 
 Representa una conexión entre dos lugares.
